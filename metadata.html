@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test -CRUK datahub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>CRUK datahub</h1> <h4>- provisional metadata categories</h4>
+
+        <p>Thank you for agreeing to act as a guinea pig as we design the new CRUK datahub.
+          This page illustrates some possible metadata headings for the hub.
+          <p>To understand what information we should require from researchers uploading data
+            we need to identify which filters are essential when looking for data
+            that you want to access. </p>
+          <p> Remember, these filters do not need to be detailed. The hub will provide
+            access to much more detailed metadata for each study included.</p>
+          <p> If you need a filter that is not shown, or you find one confusing
+            please tick the New Category box. Note some phrasing may change.</p>
+        </p>
+
+        <div id="study-selectors-container">
+            <div id="left-column" class="column"></div>
+            <div id="right-column" class="column"></div>
+        </div>
+
+    </div>
+
+    <div id="selection-display">
+        <h2>Your Selections</h2>
+        <div id="selected-items-container">
+            <p>No selections yet.</p>
+        </div>
+        <button id="downloadSelections" disabled>Download Selections</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
