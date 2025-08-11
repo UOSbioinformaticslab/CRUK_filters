@@ -20,6 +20,117 @@ const allStudyData = [
     }
   },
   {
+    "Primary site2": {
+      "Nervous System Cancers": [
+        "Anaplastic ganglioglioma",
+        "Ependymoblastoma",
+        "Ganglioneuroblastoma",
+        "Glioblastoma multiforme",
+        "Malignant neoplasm of nervous system",
+        "Malignant neoplasm of nerve sheath origin",
+        "Mixed glioma",
+        "Neuroblastoma",
+        "Oligodendroglioma",
+        "Peripheral neuroectodermal tumor",
+        "Pilomyxoid astrocytoma",
+        "Pleomorphic xanthoastrocytoma",
+        "Primitive neuroectodermal tumor"
+      ],
+      "Hematological and Lymphoid Cancers": [
+        "Malignant immunoproliferative disease",
+        "Malignant neoplasm of lymphoid, hematopoietic and/or related tissue",
+        "Malignant white blood cell disorder",
+        "Mast cell malignancy",
+        "T-lymphoblastic leukemia/lymphoblastic lymphoma"
+      ],
+      "Sarcomas and Connective Tissue Cancers": [
+        "Chordoma",
+        "Malignant fibromatous neoplasm",
+        "Malignant giant cell tumor of bone",
+        "Malignant glomus tumor",
+        "Malignant granular cell tumor",
+        "Malignant neoplasm of skeletal system",
+        "Malignant neoplasm of soft tissue",
+        "Malignant neoplasm of muscle",
+        "Malignant ossifying fibromyxoid tumor",
+        "Malignant perivascular epithelioid cell neoplasm",
+        "Malignant phosphaturic mesenchymal tumor",
+        "Malignant rhabdoid tumor",
+        "Malignant tenosynovial giant cell tumor",
+        "Sarcoma",
+        "Malignant neoplasm of connective tissue",
+        "Malignant neoplasm of blood vessel"
+      ],
+      "Epithelial and Germ Cell Cancers": [
+        "Choriocarcinoma",
+        "Embryonal carcinoma",
+        "Extragonadal germinoma",
+        "Hidradenocarcinoma",
+        "Malignant epithelial neoplasm",
+        "Malignant melanoma",
+        "Malignant teratoma",
+        "Micropapillary urothelial carcinoma",
+        "Mixed germ cell tumor",
+        "Neuroendocrine neoplasm, malignant",
+        "Polyembryoma",
+        "Seminoma",
+        "Yolk sac tumor"
+      ],
+      "Head, Neck, and Endocrine Cancers": [
+        "Malignant neoplasm of head and/or neck",
+        "Malignant neoplasm of endocrine gland",
+        "Malignant vagal paraganglioma",
+        "Malignant pheochromocytoma"
+      ],
+      "Cancers by Anatomic Region": [
+        "Malignant neoplasm of abdomen",
+        "Malignant neoplasm of back",
+        "Malignant neoplasm of digestive system",
+        "Malignant neoplasm of flank",
+        "Malignant neoplasm of genitourinary organ",
+        "Malignant neoplasm of inguinal region",
+        "Malignant neoplasm of lower limb",
+        "Malignant neoplasm of pelvis",
+        "Malignant neoplasm of perineum",
+        "Malignant neoplasm of respiratory system",
+        "Malignant neoplasm of thorax",
+        "Malignant neoplasm of trunk",
+        "Malignant neoplasm of upper limb",
+        "Malignant neoplasm of vertebral column region",
+        "Malignant neoplasm of Gartner's duct"
+      ],
+      "Cancer Modifiers and General Statuses": [
+        "Malignant acanthosis nigricans",
+        "Malignant neoplasm after immunosuppressive therapy",
+        "Malignant neoplasm in full remission",
+        "Malignant neoplasm in partial remission",
+        "Malignant neoplastic disease co-occurrent with human immunodeficiency virus infection",
+        "Malignant neoplastic disease in mother complicating childbirth",
+        "Malignant neoplastic disease in pregnancy",
+        "Malignant tumor involving an organ by direct extension from bladder",
+        "Malignant tumor involving an organ by direct extension from endometrium",
+        "Malignant tumor involving an organ by direct extension from fallopian tube",
+        "Malignant tumor involving an organ by direct extension from ovary",
+        "Malignant tumor involving an organ by direct extension from prostate",
+        "Malignant tumor involving an organ by direct extension from uterine cervix",
+        "Malignant tumor involving an organ by direct extension from uterus",
+        "Malignant tumor involving an organ by direct extension from vagina",
+        "Malignant tumor involving vasa deferentia by direct extension from prostate",
+        "Microsatellite instability-high solid malignant tumor",
+        "Multiple malignancy",
+        "Recurrent malignant neoplasm",
+        "Refractory malignant neoplastic disease",
+        "Relapsing malignant neoplastic disease",
+        "Solid neoplasm with neurotrophic receptor tyrosine kinase gene fusion"
+      ],
+      "Broad/Unspecified Cancers": [
+        "Malignant neoplasm of unknown origin",
+        "Metastatic malignant neoplasm",
+        "Primary malignant neoplasm"
+      ]
+    }
+  },
+  {
     "In Vitro Study": {
       "Cell Line Study": {
         "Cell Line Type": [
@@ -623,7 +734,7 @@ function renderTopLevelStudySections(allStudyData) {
     // Append the entire section to the correct column
     if (studyName === 'Mouse study' || studyName === 'Patient study') {
       leftColumn.appendChild(studySectionContainer);
-    } else if (studyName === 'Primary site') {
+    } else if (studyName === 'Primary site' || studyName === 'Primary site2') {
       middleColumn.appendChild(studySectionContainer);
     } else if (studyName === 'Population Study' || studyName === 'In Vitro Study') {
       rightColumn.appendChild(studySectionContainer);
