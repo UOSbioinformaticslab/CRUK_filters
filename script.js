@@ -131,52 +131,206 @@ const allStudyData = [
     }
   },
   {
-    "In Vitro Study": {
-      "Cell Line Study": {
-        "Cell Line Type": [
-          "Adherent",
-          "Suspension"
-        ],
-        "Cell Source": [
-          "Human",
-          "Mouse"
-        ],
-        "Genetic Modification": [
-          "Edited",
-          "Wild-type"
-        ],
-      },
-      "Organ-on-a-Chip Study": {
-        "Cell Source": [
-          "Cell line",
-          "Mouse",
-          "Patient",
-          "induced Pluripotent Stem Cell"
-        ],
-        "OOAC Platform/Type": [
-          "Multi-organ",
-          "Organ",
-          "Tumour"
-        ]
-      },
-      "Organoid Study": {
-        "Organoid Source": [
-          "Cell line",
-          "Induced Pluripotent Stem Cell",
-          "Mouse",
-          "Patient"
-        ],
-      }
-    }
+    "cancers - NDRS codes": {
+    'Anus': ['Anus'],
+     'Bladder': ['T1 non-muscle-invasive urothelial',
+      'Ta/Tis non-muscle-invasive urothelial',
+      'Unknown stage urothelial',
+      'Muscle-invasive urothelial',
+      'Other morphology or uncertain/unknown behaviour'],
+     'Blood': ['Hodgkin lymphoma',
+      'Essential thrombocythaemia (ET)',
+      'Chronic myeloid leukaemia (CML)',
+      'Chronic myelomonocytic leukaemia (CMML)',
+      'Chronic lymphocytic leukaemia (CLL) or small lymphocytic lymphoma (SLL)',
+      'Acute myeloid leukaemia (AML)',
+      'Myeloma',
+      'Acute lymphoblastic leukaemia (ALL)',
+      'Diffuse large B-cell lymphoma (DLBCL) and other high grade mature B-cell neoplasms',
+      'Lymphoplasmacytic lymphoma (LPL) or Waldenstrom',
+      'Mantle cell lymphoma (MCL)',
+      'Mature T-cell and NK-cell neoplasms',
+      'Other haematological neoplasms',
+      'Polycythaemia vera (PCV)',
+      'Follicular lymphoma',
+      'Marginal zone lymphoma (nodal, extranodal, MALT)'],
+     'Bone': ['Bone'],
+     'Bowel': ['Rectosigmoid junction', 'Rectum', 'Colon'],
+     'Brain': ['Non-malignant brain',
+      'Non-benign endocrine',
+      'Benign endocrine',
+      'Malignant brain'],
+     'Breast': ['Breast'],
+     'CUPS': ['Secondary malignant neoplasm of other and unspecified sites',
+      'Secondary and unspecified malignant neoplasm of lymph nodes',
+      'Secondary malignant neoplasm of respiratory and digestive organs',
+      'Malignant neoplasm, without specification of site'],
+     'Cervix': ['Cervix'],
+     'Endocrine': ['Non-thyroid endocrine glands', 'Thyroid'],
+     'Eye': ['Eye'],
+     'Head_neck': ['Middle ear, and other and ill-defined head and neck sites',
+      'Major salivary glands',
+      'Nasal cavity and sinus',
+      'Larynx',
+      'Oropharynx',
+      'Oral cavity',
+      'Hypopharynx',
+      'Nasopharynx'],
+     'Heart': ['Heart, mediastinum, pleura, other and ill-defined'],
+     'Kaposi': ['Kaposi sarcoma'],
+     'Kidney': ['Papillary RCC',
+      'Clear cell RCC',
+      'Wilms (Nephroblastoma)',
+      'Renal cell carcinoma NOS',
+      'Other',
+      'Chromophobe RCC'],
+     'Liver': ['Liver excluding intrahepatic cholangiocarcinoma',
+      'Ampulla of Vater',
+      'Cholangiocarcinoma',
+      'Gallbladder'],
+     'Lung': ['NSCLC', 'SCLC'],
+     'Mesothelioma': ['Mesothelioma'],
+     'Oesophagus': ['Overlapping lesion and unspecified',
+      'Oesophagogastric junction',
+      'Upper and middle third',
+      'Lower third'],
+     'Ovary': ['Malignant epithelial',
+      'Non-specific site',
+      'Miscellaneous and unspecified',
+      'Borderline',
+      'Sex cord-stromal and germ cell'],
+     'Pancreas': ['Carcinoma and Other', 'Neuroendocrine'],
+     'Prostate': ['Prostate'],
+     'Renal_pelvis': ['Renal pelvis and ureter'],
+     'Sarcoma': ['Bone - Ewing sarcoma',
+      'STS - Synovial',
+      'Bone - Chondrosarcoma',
+      'STS - Gastrointestinal stromal sarcoma (GIST)',
+      'STS - Other malignant soft tissue tumours',
+      'STS - Undifferentiated Sarcoma',
+      'Bone - Bone tumours of intermediate behaviour',
+      'STS - Myofibrosarcomas and other fibroblastic sarcomas',
+      'STS - Rhabdomyosarcoma',
+      'STS - Soft tissue tumours of intermediate behaviour',
+      'STS - Dermatofibrosarcoma protuberans',
+      'STS - Endometrial stromal sarcoma',
+      'Bone - Other malignant bone tumours',
+      'STS - Phyllodes',
+      'STS - Leiomyosarcoma',
+      'STS - Liposarcoma',
+      'Bone - Chordoma',
+      'STS - Malignant peripheral nerve sheath tumour (MPNST)',
+      'STS - Myxoid fibroblastic sarcomas',
+      'STS - Tumours of uncertain differentiation',
+      'Bone - Osteosarcoma',
+      'STS - Vascular Tumours'],
+     'Skin_codes': ['Skin of lip',
+      'Skin of lower limb, including hip',
+      'Overlapping lesion of vulva',
+      'Melanoma in situ of other and unspecified parts of face',
+      'Melanoma in situ of upper limb, including shoulder',
+      'Trichilemmal cyst',
+      'Malignant melanoma of upper limb, including shoulder',
+      'Malignant melanoma of lower limb, including hip',
+      'Overlapping malignant melanoma of skin',
+      'Malignant melanoma of other and unspecified parts of face',
+      'Overlapping lesion of skin',
+      'Skin of scalp and neck',
+      'Melanoma in situ of other sites',
+      'Malignant neoplasm of skin, unspecified',
+      'Skin of trunk',
+      'Labium majus',
+      'Body of penis',
+      'Skin of eyelid, including canthus',
+      'Glans penis',
+      'Scrotum - male genital organs',
+      'Melanoma in situ, unspecified',
+      'Skin of ear and external auricular canal',
+      'External genital SCC in situ of penis',
+      'Malignant melanoma of skin, unspecified',
+      'External upper lip',
+      'Melanoma in situ of ear and external auricular canal',
+      'Malignant melanoma of scalp and neck',
+      'Malignant melanoma of ear and external auricular canal',
+      'External lower lip',
+      'Commissure of lip',
+      'Labium minus',
+      'Melanoma in situ of lip',
+      'External genital SCC in situ of vulva',
+      'Overlapping lesion of penis',
+      'Penis, unspecified',
+      'Malignant melanoma of trunk',
+      'Melanoma in situ of scalp and neck',
+      'Malignant melanoma of eyelid, including canthus',
+      'Overlapping lesion of lip',
+      'Melanoma in situ of eyelid, including canthus',
+      'Melanoma in situ of trunk',
+      'External lip, unspecified',
+      'Malignant melanoma of lip',
+      'Vulva, unspecified',
+      'Prepuce - penis',
+      'Uncertain behaviour of skin',
+      'Lip, unspecified',
+      'Melanoma in situ of lower limb, including hip',
+      'Clitoris',
+      'Skin of upper limb, including shoulder',
+      'Skin of other and unspecified parts of face'],
+     'Skin_groups': ['cSCC', 'BCC', 'Melanoma', 'Rare'],
+     'Small_intestine': ['Small intestine'],
+     'Soft_tissue': ['Soft tissue'],
+     'Stomach': ['Cardia and oesophagogastric junction',
+      'Cardia',
+      'Overlapping lesion and unspecified',
+      'GIST',
+      'Non-Cardia'],
+     'Testes': ['Non-seminoma', 'Seminoma', 'Other'],
+     'Thymus': ['Thymus'],
+     'Urethra': ['Urethra'],
+     'Uterus': ['Endometrial', 'Non-endometrial'],
+     'Vagina': ['Vagina']}
+
   },
   {
-    "Mouse study": {
+    "In Vitro Study": {
+
+        "Model": [
+            "Organ on a Chip",
+            "3D organoid (including on a chip)",
+            "Organ slice"
+        ],
+        "Cell Source": [
+          "Immortalised cell-line",
+          "Patient derived",
+          "Animal"
+        ],
+        "Treatment": [
+           "Cell and cell-derived treatment",
+           "Gene knock-down",
+           "Medication",
+           "Radiation"
+        ]}
+  },
+  {
+    "Animal Model": {
+      "Animal": [
+        "Chicken",
+        "Dog",
+        "Fruit fly",
+        "Mouse",
+        "Rabbit",
+        "Rat"
+      ],
+       "Animal description": [
+        "Genetically engineered",
+        "Immuno-compromised",
+        "Patient-Derived xenograft",
+        "Syngeneic"
+      ],
       "Biobank Samples": [
         "Bloods",
         "Cells",
         "DNA/RNA",
         "Other Fluids",
-        "Organoids",
         "Tissues"
       ],
       "Biopsy & Lab Results": [
@@ -218,14 +372,11 @@ const allStudyData = [
       ],
       "Treatments": [
         "Medication",
+        "Cell and cell-derived treatments",
+        "Micro-biome alterations",
         "Organ resection and other ablations",
         "Radiotherapies"
       ],
-      "Tumour Model": [
-        "Genetically engineered mouse model",
-        "Patient-Derived xenograft",
-        "Syngeneic"
-      ]
     }
   },
   {
@@ -732,9 +883,10 @@ function renderTopLevelStudySections(allStudyData) {
 
 
     // Append the entire section to the correct column
-    if (studyName === 'Mouse study' || studyName === 'Patient study') {
+    if (studyName === 'Animal Model' || studyName === 'Patient study') {
       leftColumn.appendChild(studySectionContainer);
-    } else if (studyName === 'Primary site' || studyName === 'Cancer SNOMED-CT') {
+    } else if (studyName === 'Primary site' || studyName === 'Cancer SNOMED-CT'
+    || studyName === 'cancers - NDRS codes') {
       middleColumn.appendChild(studySectionContainer);
     } else if (studyName === 'Population Study' || studyName === 'In Vitro Study') {
       rightColumn.appendChild(studySectionContainer);
