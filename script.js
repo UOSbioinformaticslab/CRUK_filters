@@ -20,7 +20,7 @@ const allStudyData = [
     }
   },
   {
-    "Primary site2": {
+    "Cancer SNOMED-CT": {
       "Nervous System Cancers": [
         "Anaplastic ganglioglioma",
         "Ependymoblastoma",
@@ -734,7 +734,7 @@ function renderTopLevelStudySections(allStudyData) {
     // Append the entire section to the correct column
     if (studyName === 'Mouse study' || studyName === 'Patient study') {
       leftColumn.appendChild(studySectionContainer);
-    } else if (studyName === 'Primary site' || studyName === 'Primary site2') {
+    } else if (studyName === 'Primary site' || studyName === 'Cancer SNOMED-CT') {
       middleColumn.appendChild(studySectionContainer);
     } else if (studyName === 'Population Study' || studyName === 'In Vitro Study') {
       rightColumn.appendChild(studySectionContainer);
