@@ -480,8 +480,6 @@ const allStudyData = [
 
     }
   },
-
-
   {
     "cancers - COSMIC codes": {
         "site":[
