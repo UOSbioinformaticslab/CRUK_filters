@@ -372,6 +372,7 @@ const allStudyData = [
          "Thyroid and other endocrine glands": {
             "C73 THYROID GLAND": ["C73.9 Thyroid gland"], "C74 ADRENAL GLAND": ["C74.0 Cortex of adrenal gland", "C74.1 Medulla of adrenal gland", "C74.9 Adrenal gland, NOS"], "C75 OTHER ENDOCRINE GLANDS AND RELATED STRUCTURES": ["C75.0 Parathyroid gland", "C75.1 Pituitary gland", "C75.2 Craniopharyngeal duct", "C75.3 Pineal gland", "C75.4 Carotid body", "C75.5 Aortic body and other paraganglia", "C75.8 Overlapping lesion of endocrine glands and related structures", "C75.9 Endocrine gland, NOS"]
          },
+
          "Ill-defined, secondary, and unspecified sites":{
              "C76 OTHER AND ILL-DEFINED SITES": ["C76.0 Head, face or neck, NOS", "C76.1 Thorax, NOS", "C76.2 Abdomen, NOS", "C76.3 Pelvis, NOS", "C76.4 Upper limb, NOS", "C76.5 Lower limb, NOS", "C76.7 Other ill-defined sites", "C76.8 Overlapping lesion of ill-defined sites"],
              "C77 LYMPH NODES": ["C77.0 Lymph nodes of head, face and neck", "C77.1 Intrathoracic lymph nodes", "C77.2 Intra-abdominal lymph nodes", "C77.3 Lymph nodes of axilla or arm", "C77.4 Lymph nodes of inguinal region or leg", "C77.5 Pelvic lymph nodes", "C77.8 Lymph nodes of multiple regions", "C77.9 Lymph node, NOS"],
